@@ -7,13 +7,4 @@ public class DanhSachCanBo {
 	public ArrayList<CanBo> layDanhSachCanBo(){
 		return danhsachs;
 	}
-	public CanBo timNhanVien(){
-		String ten=null;
-	        for(CanBo cb: danhsachs){
-	            if(cb.getHoten().equalsIgnoreCase(ten)){
-	                return cb;
-	            }
-	        }
-	        return null;
-	    }
 }
