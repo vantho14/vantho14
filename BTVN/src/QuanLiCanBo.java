@@ -6,7 +6,7 @@ import javax.swing.event.TableColumnModelListener;
 	public class QuanLiCanBo {
 		public void mainMenu() {
 			// TODO Auto-generated method stub
-			System.out.println("Nhap 1 - Them");
+			System.out.println("Nhap 1 - Nhap");
 			System.out.println("Nhap 2 - Hien thi danh sach");
 			System.out.println("Nhap 3 - Tim Kiem");
 			System.out.println("Nhap 0 - Thoat");
@@ -40,10 +40,10 @@ import javax.swing.event.TableColumnModelListener;
 		}
 
 		private void themCanBo() {
-			System.out.println("Nhap 4 - Them cong nhan");
-			System.out.println("Nhap 5 - Them ky su");
-			System.out.println("Nhap 6 - Them nhan vien phuc vu");
-			System.out.println("Nhap 0 - Ket thuc them nhan vien");
+			System.out.println("Nhap 4 - Nhap thong tin cong nhan");
+			System.out.println("Nhap 5 - Nhap thong tin ky su");
+			System.out.println("Nhap 6 - Nhap thong tin nhan vien");
+			System.out.println("Nhap 0 - Ket thuc");
 			int luaChon = 0;
 			do {
 				System.out.println("Ban chon them loai nhan vien:");
@@ -51,23 +51,23 @@ import javax.swing.event.TableColumnModelListener;
 				switch (luaChon) {
 				case 4:
 					if (danhsach.them(taoCongNhan())) {
-						System.out.println("them moi cong nhan thanh cong");
+						System.out.println("Nhap cong nhan thanh cong");
 					} else {
-						System.out.println("them moi cong nhan that bai");
+						System.out.println("Nhap cong nhan that bai");
 					}
 					break;
 				case 5:
 					if (danhsach.them(taoKySu())) {
-						System.out.println("them moi ky su thanh cong");
+						System.out.println("Nhap ky su thanh cong");
 					} else {
-						System.out.println("them moi ky su that bai");
+						System.out.println("Nhap ky su that bai");
 					}
 					break;
 				case 6:
 					if (danhsach.them(taoNhanVienPV())) {
-						System.out.println("them moi nhan vien thanh cong");
+						System.out.println("Nhap nhan vien thanh cong");
 					} else {
-						System.out.println("them moi nhan vien thanh cong");
+						System.out.println("Nhap nhan vien thanh cong");
 					}
 					break;
 				}
